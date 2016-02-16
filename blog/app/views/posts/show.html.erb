@@ -1,0 +1,25 @@
+<h1><%= @post.title %></h1>
+<div>
+<%= @post.body %>
+<br>
+<br>
+<%= @post.author %>
+<br>
+<br>
+<%= @post.paragraph %>
+<br>
+<br>
+<%= @post.test %>
+<br>
+<br>
+<%= @post.blood_type %>
+<br>
+<br>
+<%= @post.cell_phone %>
+<br>
+<br>
+</div>
+<br>
+<%= link_to "Edit Post", edit_post_path(@post) %>
+<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?"} %>
+<%= link_to "Read Post", @post %> 
